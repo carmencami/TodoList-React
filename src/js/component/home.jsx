@@ -24,11 +24,11 @@ const Home = () => {
     }
     const html =tasks.map((e, i)=>{
         return <li key={i}>{e}
-        <button className="btn btn-success" onClick={()=>resetButton(i)}value={tasks}>X</button>
+        <button className="btn btn-white" onClick={()=>resetButton(i)}value={tasks}>X</button>
         </li>
     })
     return (
-        <div className="text-center contenedor" >
+        <div className="text-center contenedor " >
             <h1>ToDos</h1>
             <input className="todo-input form-control" type="text" onChange={handlerInput} onKeyDown={(e)=>handlePress(e)} value={inputValue}/>
             {/* <button className="btn button-text" onClick={handleButton}></button> */}
